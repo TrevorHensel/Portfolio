@@ -13,6 +13,7 @@ class Experience extends Component {
       var work = this.props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
+        const workPositions = work.positions;
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
@@ -28,6 +29,22 @@ class Experience extends Component {
             </Badge>
           );
         });
+        var positions = workPositions?.map((experience, i) => {
+          return (
+            <tr key={i}>
+              <td>
+                <Badge pill className="main-badge mr-2 mb-2">
+                  {experience.title}
+                </Badge>
+              </td>
+              <td>
+                <div className="work-position-years">
+                  {experience.years}
+                </div>
+              </td>
+            </tr>
+          )
+        })
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -58,6 +75,25 @@ class Experience extends Component {
               {work.company}
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            {positions &&
+              <>
+                <h3
+                    className="vertical-timeline-element-title"
+                    style={{ textAlign: "left", marginTop: "15px" }}
+                >
+                  Positions
+                </h3>
+                <table className="work-positions">
+                    <colgroup>
+                        <col style={{ width: "70%" }}/>
+                        <col style={{ width: "30%" }}/>
+                    </colgroup>
+                  <tbody>
+                    {positions}
+                  </tbody>
+                </table>
+              </>
+            }
           </VerticalTimelineElement>
         );
       });

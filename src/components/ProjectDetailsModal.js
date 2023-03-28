@@ -9,10 +9,11 @@ class ProjectDetailsModal extends Component {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
       const images = this.props.data.images;
+      const additionalLinks = this.props.data.additionalLinks;
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
-      if (this.props.data.technologies) {
+      if (technologies) {
         var tech = technologies.map((icons, i) => {
           return (
             <li className="list-inline-item mx-3" key={i}>
@@ -28,11 +29,19 @@ class ProjectDetailsModal extends Component {
             </li>
           );
         });
-        if (this.props.data.images) {
-          var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
-          });
-        }
+        var img = images?.map((elem, i) => {
+          return <div key={i} data-src={elem} />;
+        });
+        var links = additionalLinks?.map((link, i) => {
+          return(
+            <li key={i}>
+              <a href={link.url} className="project-link" target="_blank">
+                {link.title}
+                <i className="fas fa-external-link-alt" style={{ marginLeft: "10px" }} />
+              </a>
+            </li>
+          )
+        })
       }
     }
     return (
@@ -78,7 +87,7 @@ class ProjectDetailsModal extends Component {
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
+
               {url ? (
                 <a
                   href={url}
@@ -86,14 +95,23 @@ class ProjectDetailsModal extends Component {
                   rel="noopener noreferrer"
                   className="link-href"
                 >
+                  {title}
                   <i
                     className="fas fa-external-link-alt"
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>
-              ) : null}
+              ) : <>{title}</>}
             </h3>
             <p className="modal-description">{description}</p>
+            {links &&
+                <>
+                  <h4>Additional Info</h4>
+                  <ul className="projects-additional-info">
+                    {links}
+                  </ul>
+                </>
+            }
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>
