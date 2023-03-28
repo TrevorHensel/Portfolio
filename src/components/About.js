@@ -80,7 +80,7 @@ class About extends Component {
                     <span className="wave">{hello} </span>
                     <br />
                     <br />
-                    {about}
+                    <div style={{whiteSpace: "pre-line"}}> {about} </div>
                   </div>
                 </div>
               </div>

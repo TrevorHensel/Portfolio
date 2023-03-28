@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "name": "Trevor Hensel",
-      "titles": [ "Team Leader", "Team Player", "Full Stack Developer" ],
+      "titles": [ "Team Leader", "Sr. Full Stack Developer", "Team Player" ],
       "social": [
         {
           "name": "github",
@@ -20,48 +20,43 @@
       "icons": [
         {
           "name": "Java",
-          "class": "devicon-java-plain",
-          "level": "60"
+          "class": "devicon-java-plain"
         },
         {
           "name": "Azure",
-          "class": "devicon-azure-plain",
-          "level": "60"
+          "class": "devicon-azure-plain"
+        },
+        {
+          "name": "Terraform",
+          "class": "devicon-terraform-plain"
         },
         {
           "name": "React",
-          "class": "devicon-react-original",
-          "level": "75"
+          "class": "devicon-react-original"
+        },
+        {
+          "name": "Prometheus",
+          "class": "devicon-prometheus-original"
         },
         {
           "name": "SQL",
-          "class": "devicon-microsoftsqlserver-plain",
-          "level": "60"
+          "class": "devicon-microsoftsqlserver-plain"
         },
         {
           "name": "MongoDB",
-          "class": "devicon-mongodb-plain",
-          "level": "60"
+          "class": "devicon-mongodb-plain"
         },
         {
           "name": "Spring",
-          "class": "devicon-spring-plain",
-          "level": "75"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
+          "class": "devicon-spring-plain"
         },
         {
           "name": "DevOps",
-          "class": "devicon-devicon-plain",
-          "level": "60"
+          "class": "devicon-devicon-plain"
         },
         {
           "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
+          "class": "devicon-javascript-plain"
         }
       ]
     }

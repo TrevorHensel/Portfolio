@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Passionate, Driven, & Enthusiastic ",
-      "description": "Those are the three words I'd use to describe myself when it comes to Full-Stack Development. As a Full-Stack Developer I not only understand all the stages in the Software Development Life Cycle, I have experience with them as well. Through planning and gathering requirements, to early development with Alpha releases and then major releases, to deploying and maintaining my team's work. Each time through the cycle I learn something new. I continue to hone my skills and become even more passionate, driven, and enthusiastic about my work!",
+      "description": "I maintain the qualities of a full stack developer who is deeply passionate about not only completing projects but also ensuring their success. My approach to the software development life cycle is dynamic, which allows me to navigate any challenges I may face and find the best path forward.\n\nThroughout my career, I have consistently demonstrated an unwavering commitment to developing architectures that are future-proof and scalable. My expertise in architecting, developing, deploying, and maintaining microservices from the ground up has earned myself a reputation throughout my peer group. Additionally, I possess the unique ability to breathe new life into legacy monoliths, breaking them down into more manageable pieces and modernizing them.\n\nMy dedication to excellence and my skill set make me a valuable asset to any organization that seeks to innovate and succeed in today's ever-changing technological landscape.\n",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,13 +11,50 @@
     },
     "projects": [
       {
-        "title": "GeoBarista",
-        "startDate": "2020",
-        "description": "GeoBarista is a cross-platform open-source application built on web technology to sort/filter/view/convert geo-referenced imagery on a map.",
+        "title": "Deep Learning and the Game of Go",
+        "startDate": "2022",
+        "description": "A wonderful book that introduces many AI and Machine Learning concepts by iteratively building a bot that plays the game of Go. The end goal is to \"...apply the power of deep learning to complex reasoning tasks...\" therefore creating a go that bot that is better than an human player (book description). This is currently a work in progress when I have the time.",
+        "thumbnail": "images/portfolio/Go/Go.jpg",
         "images": [
-          "images/portfolio/GeoBarista/GeoBarista_Logo.png"
+          "images/portfolio/Go/Go.jpg"
+        ],
+        "url": "https://github.com/TrevorHensel/Deep_Learning_With_Go",
+        "additionalLinks": [
+          {
+            "title": "Book",
+            "url": "https://www.amazon.com/Deep-Learning-Game-Max-Pumperla/dp/1617295329"
+          }
+        ],
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-numpy-original",
+            "name": "Numpy"
+          }
+        ]
+      },
+      {
+        "title": "GeoBarista / PeARL Flash",
+        "startDate": "2020",
+        "description": "GeoBarista started off as an Open-Source PSU Capstone Project for my team. Which, to my knowledge, was used as a proof of concept for Parson's PeARL Flash 2 and to this day probably shares some of the same code. GeoBarista is a cross-platform open-source application built on web technology to sort/filter/view/convert geo-referenced imagery on a map. This allows the user to capture images with an ariel camera and overlay them on a map. This was done using a variety of GPS data and camera telemetry available from the photo's metadata",
+        "thumbnail": "images/portfolio/GeoBarista/GeoBarista_Thumbnail.png",
+        "images": [
+          "images/portfolio/GeoBarista/GeoBarista.png"
         ],
         "url": "https://github.com/TrevorHensel/GeoBarista",
+        "additionalLinks" : [
+          {
+            "title": "Video Demonstration",
+            "url": "https://www.youtube.com/watch?v=XQ9gt5smfOg&list=PL8UcQG2HIo47ipmo-apJVxOnvWq10RnF8&index=9"
+          },
+          {
+            "title": "PeARL Flash",
+            "url": "https://www.parsons.com/products/pearl/"
+          }
+        ],
         "technologies": [
           {
             "class": "devicon-electron-original",
@@ -44,7 +81,8 @@
       {
         "title": "Wheely-Fast",
         "startDate": "2020",
-        "description": "A simple 2D racing game to explore the game development process in Rust.",
+        "description": "A simple 2D racing game to explore the game development process in Rust. The premise is to \"drive\" along the road and avoid the obstacles that come at you faster and faster as you progress, increasing your score. Highest Score Wins!",
+        "thumbnail": "images/portfolio/Wheely_Fast/Wheely_Fast_Thumbnail.png",
         "images": [
           "images/portfolio/Wheely_Fast/Wheely_Fast.png"
         ],
@@ -55,62 +93,63 @@
             "name": "Rust"
           }
         ]
-      },
-      {
-        "title": "Deep Learning and the Game of Go",
-        "startDate": "2022",
-        "description": "A wonderful book that introduces many AI concepts by iteratively building a bot that plays the game of Go. Currently a work in progress when I have time.",
-        "images": [
-          "images/portfolio/Go/Go.jpg"
-        ],
-        "url": "https://github.com/TrevorHensel/Deep_Learning_With_Go",
-        "technologies": [
-          {
-            "class": "devicon-python-plain",
-            "name": "Python"
-          },
-          {
-            "class": "devicon-numpy-original",
-            "name": "Numpy"
-          }
-        ]
       }
     ],
     "experience": [
       {
         "company": "iGrafx",
-        "title": "Full-Stack Engineer",
-        "years": "7.2021 - present",
+        "title": "Sr. Full-Stack Engineer",
+        "years": "Jul. 2021 - present",
         "mainTech": [
-          "Java"
+          "Java / Terraform / React"
         ],
         "technologies": [
           "Azure",
           "Spring MVC & Boot",
-          "Dev Ops",
-          "JavaScript",
+          "Octopus Deploy",
+          "Open API",
           "TypeScript",
-          "React",
-          "Tomcat",
           "Kotlin",
-          "SQL"
+          "SQL",
+          "MongoDB",
+          "Prometheus",
+          "Junit",
+          "SonarQube",
+          "GitLab CI/CD"
+        ],
+        "positions": [
+          {
+            "title": "Engineering Manager (interim)",
+            "years": "Nov. 2022 - Present"
+          },
+          {
+            "title": "Sr. Full-Stack Engineer",
+            "years": "Jul. 2022 - present"
+          },
+          {
+            "title": "Full-Stack Engineer",
+            "years": "Jan. 2022 - Jul. 2022"
+          },
+          {
+            "title": "Backend Developer",
+            "years": "Jul. 2021 - Jan. 2022"
+          }
         ]
       },
       {
         "company": "General Motors",
         "title": "Software Engineer",
-        "years": "01.2021 - 07.2021",
+        "years": "Jan. 2021 - Jul. 2021",
         "mainTech": [
-          "Java"
+          "Java / Angular"
         ],
         "technologies": [
-          "Tomcat",
           "Dev Ops",
           "JavaScript",
-          "GM's Cloud",
+          "GM's Private Cloud",
           "SQL",
           "Spring Boot",
-          "Angular"
+          "Junit"
         ]
       }
     ]
